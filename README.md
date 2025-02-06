@@ -1,16 +1,39 @@
-## Hi there 👋
+# GBC CS Club
 
-<!--
-**gbccsclub/gbccsclub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Table of Contents
 
-Here are some ideas to get you started:
+- [Contribution Guide](#contribution-guide)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+# Contribution Guide
+
+## Local setup
+
+Fork the repo
+
+Clone the repo
+
+```bash
+```
+
+Install dependencies
+
+```bash
+```
+
+Start the dev server
+
+```bash
+```
+
+Open the browser and navigate to `localhost:3000`
+
+## Making Changes
+
+Follow:
+- [Basic Guidelines](#basic-website-guidelines) for the project structure 
+- [CONTRIBUTION](CONTRIBUTION.md) for the detailed contribution guidelines
+- [Astro documentation](https://docs.astro.build/en/getting-started/) for details on Astro
+
+## Pull Request
+
+## Basic Website Guidelines
