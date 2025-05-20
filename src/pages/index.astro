@@ -1,15 +1,40 @@
-<html lang="en">
-	<head>
-		<title>Astro</title>
-	</head>
+---
+// Server side code Javascript/Typescript
 
-	<body>
-		<h1>Hello world</h1>
-	</body>
-</html>
+import Layout from '../layouts/Layout.astro';
+import AlumniLayout from "../layouts/AlumniLayout.astro";
+
+---
+
+<Layout title="Home">
+	<h1>GBC CS Club</h1>
+
+	<AlumniLayout />
+
+	<button onclick="increase()">
+		Click <span id="count"></span>
+	</button>
+</Layout>
 
 <style>
 	body {
-		background-color: blue;
+		background-color: white;
 	}
 </style>
+
+<script is:inline>
+	// Client side code
+
+	let a = 10;
+
+	function increase() {
+		a++;
+		const countElement = document.getElementById("count");
+		if (countElement) {
+			countElement.innerHTML = a.toString();
+		}
+	}
+
+	increase();
+
+</script>
