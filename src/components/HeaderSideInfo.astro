@@ -1,0 +1,16 @@
+---
+const { content } = Astro.props;
+// content: string[][]
+---
+
+<div id="header_side_info_component" class="flex flex-col gap-2">
+  {content.map((component: string[]) => (
+    <div class="my-4 text-3xl">
+      {component.map((text: string) => (
+        <p class="text-[#BEB6A2] flex flex-col justify-center items-start">
+          {text}
+        </p>
+      ))}
+    </div>
+  ))}
+</div>

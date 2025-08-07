@@ -1,0 +1,40 @@
+---
+import HeaderSideInfo from "./HeaderSideInfo.astro"
+---
+
+<div id="header" class="relative">
+    <div class="absolute top-100 w-64 h-64 rounded-full bg-[#BEB6A254] blur-3xl pointer-events-none"></div>
+    <div class="absolute top-0 right-0 w-64 h-64 rounded-full bg-[#BEB6A254] blur-3xl pointer-events-none"></div>
+
+    <div class="bg-[#1E1E1E] min-h-[100dvh] flex flex-col justify-between items-center w-full pt-10 gap-6">
+        <div id="header_half_1" class="flex justify-center items-center w-full py-10">
+                <div id="header_title" class="border-r-2 border-solid border-[#BEB6A2] mx-5 w-full flex justify-center">
+
+                <!-- Don't put any indentation -->
+                <pre class="text-white font-mono text-8xl w-fit">
+<span class="text-[#FC693E]">==&gt;</span><span class="text-[#E8DEC3]">GBC</span><span class="text-[#FC693E]">&lt;==</span>
+<span class="text-[#4FA76B]">&#123;</span>  <span class="font-bold text-[#E8DEC3]">Computer</span>
+<span class="text-[#4D80F5]">::</span> <span class="font-bold text-[#E8DEC3]">Science</span> <span class="text-[#4D80F5]">..</span> <span class="text-[#4FA76B]">&#125;</span>
+   <span class="font-bold text-[#E8DEC3]">Club</span>
+</pre>
+            </div>
+
+            <div id="header_side_info" class="flex justify-center px-30">
+                <HeaderSideInfo content={
+                    [
+                        ["COMPETE", "COLLABORATE", "CREATE"],
+                        ["JOIN US", "EVERY", "WEDNESDAY"],
+                        ["4 PM CASA", "6 PM LOMA"]
+                    ]
+                }/>
+            </div>
+        </div>
+        <div id="header_half_2">
+            <div class="w-screen">
+                <img src="/src/assets/images/ieee18_participants.png" alt="" class="w-full h-auto object-cover">
+            </div>
+        </div>
+
+</div>
+</div>
+</div>
